@@ -2,43 +2,43 @@ print("Program queue kelompok 5")
 
 jalan = True
 
-# fungsi untuk method method dalam stack
+# fungsi untuk method method dalam queu
 
-def create_stack():
-    stack = []
-    return stack
+def create_queu():
+    queu = []
+    return queu
 
-def empty_stack(stack):
-    if len(stack) == 0:
+def empty_queu(queu):
+    if len(queu) == 0:
         print("data is empty")
         return False
     else:
         print("data is not empty")
 
-def add_value(stack,item):
-    stack.append(item)
-    print("add value "+ str(item) +" in stack")
+def add_value(queu,item):
+    queu.append(item)
+    print("add value "+ str(item) +" in queu")
 
-def show_stack(stack):
-    print(stack)
+def show_queu(queu):
+    print(queu)
 
-def remove_stack(stack):
-    if (empty_stack(stack) == False):
+def remove_queu(queu):
+    if (empty_queu(queu) == False):
         return "data is empty"
     else:
-        stack.pop(0)
+        queu.pop(0)
         print("first data is removed")
 
-def size(stack):
-    print("panjang queu adalah = "+ str(len(stack)))
+def size(queu):
+    print("panjang queu adalah = "+ str(len(queu)))
 
 
-stack = create_stack()
+queu = create_queu()
 
 while jalan:
     print(" ")
     print(" ")
-    print("Menu dalam program stack python sederhana")
+    print("Menu dalam program queu python sederhana")
     print("1. Empty queue")
     print("2. Add queue value")
     print("3. Show queue value")
@@ -50,15 +50,15 @@ while jalan:
     data = int(input("Masukan fungsi yang dipilih = "))
 
     if data == 1:
-        empty_stack(stack)
+        empty_queu(queu)
     elif data == 2:
         value = int(input("Masukkan nilai = "))
-        add_value(stack,value)
+        add_value(queu,value)
     elif data == 3:
-        show_stack(stack)
+        show_queu(queu)
     elif data == 4:
-        remove_stack(stack)
+        remove_queu(queu)
     elif data == 5:
-        size(stack)
+        size(queu)
     elif data == 6:
          jalan = False
